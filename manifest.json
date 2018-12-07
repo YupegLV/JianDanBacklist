@@ -1,0 +1,24 @@
+{
+    "name": "煎蛋讨厌的人",
+    "manifest_version": 2,
+    "version": "1.0",
+    "description": "煎蛋版眼不见心不烦",
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_title": "煎蛋版眼不见心不烦",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "declarativeContent",
+        "storage"
+    ],
+    "content_scripts": [{
+        "matches": ["*://jandan.net/*"],
+        "js": ["js/jq.js", "js/script.js"]
+    }]
+}
