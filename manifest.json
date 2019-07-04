@@ -17,8 +17,15 @@
         "declarativeContent",
         "storage"
     ],
-    "content_scripts": [{
-        "matches": ["*://jandan.net/*"],
-        "js": ["js/jq.js", "js/script.js"]
-    }]
+    "content_scripts": [
+        {
+            "matches": [
+                "*://jandan.net/*"
+            ],
+            "js": [
+                "js/jq.js",
+                "js/script.js"
+            ]
+        }
+    ]
 }
